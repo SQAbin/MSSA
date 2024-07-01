@@ -29,7 +29,7 @@
 MSSA is a binary code clone detection method.
 the final **AUC** value can reach about **99.7%**. For more specific information, please refer to paper------.
 ### The MSSA Model 
-![MSSA Model](https://github.com/zhouCQJ/MSSA/assets/170287774/8c34eae0-055c-42aa-b9ad-3240314672e9)
+![MSSA Model](https://github.com/SQAbin/assets/170287774/8c34eae0-055c-42aa-b9ad-3240314672e9)
 
 ## Install 🐙
 It is recommended that you install a conda environment and then install the dependent packages with the following command：
@@ -50,7 +50,7 @@ git clone https://github.com/zhouCQJ/MSSA.git -d your_profile
 ## Exemples 🖍
 We trained with the **A5000** GPU.
 ```
-python run.py --train true --test true --mrr true --w2v_dim 100 --batch_size 10024--max_block_seq 20--num_block 20 --iter_level 5 
+python run.py --train true --test true --mrr true --w2v_dim 100 --batch_size 1024--max_block_seq 20--num_block 20 --iter_level 5 
 ```
 
 ## Documentation 📄
