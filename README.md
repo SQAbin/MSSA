@@ -34,14 +34,14 @@ the final **AUC** value can reach about **99.7%**. For more specific information
 ## Install 🐙
 It is recommended that you install a conda environment and then install the dependent packages with the following command：
 ```
-conda create -n DeepBCCD37 -y python==3.7.16 && conda activate DeepBCCD37
+conda create -n MSSA37 -y python==3.7.16 && conda activate MSSAD37
 pip install -r requirements.txt
 ```
 
 ## Usage 💡
 1. git clone the project.
 ```
-git clone https://github.com/zhouCQJ/MSSA.git -d your_profile
+git clone https://github.com/SQAbin/MSSA.git -d your_profile
 ```
 2. Go inside the project folder(IDE) and open your terminal.
 3. See  [Install](##install) to install the environment.
