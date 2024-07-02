@@ -8,7 +8,7 @@
     <b>MSSA</b>
   </p>
   <p>
-     <i>MSSA is designed to detect binary code similarities. MSSA not only uses the CFG structure information in the upper binary code, but also uses the Bi-GRU network to extract the semantic information between the binary code instructions.</i>
+     <i>MSSA is designed to detect binary code similarities.</i>
   </p>
 </div>
 
@@ -27,7 +27,8 @@
 
 ## Description ✨
 MSSA is a binary code clone detection method.
-the final **AUC** value can reach about **99.7%**. For more specific information, please refer to paper------.
+MSSA effectively integrates the semantic and structural information of assembly instructions within and between basic blocks, and across entire functions through four semantic-aware neural networks, achieving deep understanding of binary code. 
+The final **AUC** value can reach about **99.7%**. For more specific information, please refer to paper.
 ### The MSSA Model 
 ![MSSA Model](https://github.com/SQAbin/assets/blob/main/The%20overview%20of%20MSSA.png)
 
