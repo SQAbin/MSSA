@@ -26,7 +26,6 @@
 * [Maintainers](##maintainers)
 
 ## Description ✨
-MSSA is a binary code clone detection method.
 MSSA effectively integrates the semantic and structural information of assembly instructions within and between basic blocks, and across entire functions through four semantic-aware neural networks, achieving deep understanding of binary code. 
 The final **AUC** value can reach about **99.7%**. For more specific information, please refer to paper.
 ### The MSSA Model 
