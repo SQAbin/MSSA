@@ -48,7 +48,7 @@ git clone https://github.com/SQAbin/MSSA.git -d your_profile
 4. run the command `python run.py --train true --test true` to start.
 
 ## Exemples 🖍
-We trained with the **A5000** GPU.
+train and test command.
 ```
 python run.py --train true --test true --mrr true --w2v_dim 100 --batch_size 1024--max_block_seq 20--num_block 20 --iter_level 5 
 ```
