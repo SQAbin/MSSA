@@ -57,7 +57,7 @@ python run.py --train true --test true --mrr true --w2v_dim 100 --batch_size 102
 For a more detailed description of the contents of MSSA, please refer to our paper-----
 
 ## Datasets 👩‍💻
-For the datasets, we used the datasets **BinaryCorp-3M**（https://github.com/vul337/jTrans) in the Jtrans paper. To conform to the input format according to the DeepBCCD model, We re-extracted the binary function set from the source binary and formed the **dataset_train.csv** and **dataset_test.csv** datasets，which are also essentially derived from Binarycorp-3M.
+For the datasets, we used the datasets **BinaryCorp-3M**（https://github.com/vul337/jTrans) in the Jtrans paper. To conform to the input format according to the MSSA model, We re-extracted the binary function set from the source binary and formed the **dataset_train.csv** and **dataset_test.csv** datasets，which are also essentially derived from Binarycorp-3M.
 For the **BinaryCrop-26M** dataset, we will try it in the future because it requires a larger training resource。					
 
 The dataset used in MSSA [download](https://efss.qloud.my/index.php/s/a2B2S9rNwdXkmBo).
