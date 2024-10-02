@@ -26,7 +26,7 @@ def test_MRR_Recall_k( MSSA, config):
     temp_df = ins_to_index(temp_df,config)
     b1, g1, b2, g2, Y_test = test_data_process(temp_df,config)
 
-    K = config.k  # 前K个最相关预测
+    K = config.k  
     recall_at_k = 0.0
     mrr = 0.0
     for i in range(0, config.poolsize):
@@ -63,16 +63,14 @@ def test_MRR_Recall_k( MSSA, config):
 
 
 def model_load_path(config):
-    # 设定模型数据所在的目录
+    # model load_path
     model_dir = config.model_load_weights
 
-    # 获取模型文件列表
     model_list = os.listdir(model_dir)
 
-    # 定义匹配模式，查找文件名中的数字部分
     pattern = re.compile(r'\d+')
 
-    # 定义变量储存当前最大的数字
+    # latest model
     max_num = 0
     for model_file in model_list:
         match = pattern.search(model_file)
