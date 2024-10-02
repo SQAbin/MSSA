@@ -11,7 +11,7 @@ class Iterative_network(tf.keras.Model):
     def __init__(self, Config):
         super(Iterative_network, self).__init__()
         self.config = Config
-        # 定义模型层
+        # model
         self.iter_level = self.config.iter_level
         self.wi1 = tf.keras.layers.Dense(128, trainable=True, kernel_initializer='glorot_uniform', )
         self.wi2 = tf.keras.layers.Dense(128, trainable=True, activation='relu', kernel_initializer='glorot_uniform')
@@ -20,14 +20,14 @@ class Iterative_network(tf.keras.Model):
         self.ww1 = self.config.ww1
 
     def call(self, inputs):
-        # 定义模型的正向传播过程inputs[0] ->mask
+        # forward inputs[0] ->mask
         # inputs[1] ->cur_msg1
         # inputs[2] ->node_val1
-        for t in range(0, self.iter_level):  ##迭代5次
+        for t in range(0, self.iter_level):  ##iter
             Li_t1 = tf.matmul(inputs[0], inputs[1])
 
             cur_info1 = tf.reshape(Li_t1, [-1, self.ww1])
-            cur_info1 = tf.nn.relu(self.Embed_Dense[0](cur_info1))  ##嵌入深度为3
+            cur_info1 = tf.nn.relu(self.Embed_Dense[0](cur_info1))  ##embedding depth
             cur_info1 = self.Embed_Dense[1](cur_info1)
             cur_info1 = self.Embed_Dense[2](cur_info1)
 
