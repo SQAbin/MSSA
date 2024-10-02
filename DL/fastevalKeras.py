@@ -91,7 +91,7 @@ def eval(TYPE1, TYPE2,model):
         b1, g1, b2, g2, Y_test = test_data_process(temp_df, config)
 
 
-        K = config.k  # 前K个最相关预测
+        K = config.k  
 
         for idx in range(0, config.poolsize):
             b1_32 = copy.deepcopy(b1)
